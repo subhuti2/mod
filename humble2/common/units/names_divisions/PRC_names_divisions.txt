@@ -1,0 +1,272 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+PRC_INF_01 = 
+{
+	name = "Infantry Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "HongJun %d. Shi" }
+		2 = { "HongJun %d. Shi" }
+		3 = { "HongJun %d. Shi" }
+		4 = { "HongJun %d. Shi" }
+		5 = { "HongJun %d. Shi" }
+		6 = { "HongJun %d. Shi" }
+		7 = { "HongJun %d. Shi" }
+		8 = { "HongJun %d. Shi" }
+		9 = { "HongJun %d. Shi" }
+		10 = { "HongJun %d. Shi" }
+		11 = { "HongJun %d. Shi" }
+		12 = { "HongJun %d. Shi" }
+		13 = { "HongJun %d. Shi" }
+		14 = { "HongJun %d. Shi" }
+		15 = { "HongJun %d. Shi" }
+		16 = { "HongJun %d. Shi" }
+		17 = { "HongJun %d. Shi" }
+		18 = { "HongJun %d. Shi" }
+		19 = { "HongJun %d. Shi" }
+		20 = { "HongJun %d. Shi" }
+		21 = { "HongJun %d. Shi" }
+		22 = { "HongJun %d. Shi" }
+		23 = { "HongJun %d. Shi" }
+		24 = { "HongJun %d. Shi" }
+		25 = { "HongJun %d. Shi" }
+		26 = { "HongJun %d. Shi" }
+		27 = { "HongJun %d. Shi" }
+		28 = { "HongJun %d. Shi" }
+		29 = { "HongJun %d. Shi" }
+		30 = { "HongJun %d. Shi" }
+		31 = { "HongJun %d. Shi" }
+		32 = { "HongJun %d. Shi" }
+		33 = { "HongJun %d. Shi" }
+		34 = { "HongJun %d. Shi" }
+		35 = { "HongJun %d. Shi" }
+		36 = { "HongJun %d. Shi" }
+		37 = { "HongJun %d. Shi" }
+		38 = { "HongJun %d. Shi" }
+		39 = { "HongJun %d. Shi" }
+		40 = { "HongJun %d. Shi" }
+		41 = { "HongJun %d. Shi" }
+		42 = { "HongJun %d. Shi" }
+		43 = { "HongJun %d. Shi" }
+		44 = { "HongJun %d. Shi" }
+		45 = { "HongJun %d. Shi" }
+		46 = { "HongJun %d. Shi" }
+		47 = { "HongJun %d. Shi" }
+		48 = { "HongJun %d. Shi" }
+		49 = { "HongJun %d. Shi" }
+		50 = { "HongJun %d. Shi" }
+		51 = { "HongJun %d. Shi" }
+		52 = { "HongJun %d. Shi" }
+		53 = { "HongJun %d. Shi" }
+		54 = { "HongJun %d. Shi" }
+		55 = { "HongJun %d. Shi" }
+		56 = { "HongJun %d. Shi" }
+		57 = { "HongJun %d. Shi" }
+		58 = { "HongJun %d. Shi" }
+		59 = { "HongJun %d. Shi" }
+		60 = { "HongJun %d. Shi" }
+		61 = { "HongJun %d. Shi" }
+		62 = { "HongJun %d. Shi" }
+		63 = { "HongJun %d. Shi" }
+		64 = { "HongJun %d. Shi" }
+		65 = { "HongJun %d. Shi" }
+		66 = { "HongJun %d. Shi" }
+		67 = { "HongJun %d. Shi" }
+		68 = { "HongJun %d. Shi" }
+		69 = { "HongJun %d. Shi" }
+		70 = { "HongJun %d. Shi" }
+		71 = { "HongJun %d. Shi" }
+		72 = { "HongJun %d. Shi" }
+		73 = { "HongJun %d. Shi" }
+		74 = { "HongJun %d. Shi" }
+		75 = { "HongJun %d. Shi" }
+		76 = { "HongJun %d. Shi" }
+		77 = { "HongJun %d. Shi" }
+		78 = { "HongJun %d. Shi" }
+		79 = { "HongJun %d. Shi" }
+		80 = { "HongJun %d. Shi" }
+		81 = { "HongJun %d. Shi" }
+		82 = { "HongJun %d. Shi" }
+		83 = { "HongJun %d. Shi" }
+		84 = { "HongJun %d. Shi" }
+		85 = { "HongJun %d. Shi" }
+		86 = { "HongJun %d. Shi" }
+		87 = { "HongJun %d. Shi" }
+		88 = { "HongJun %d. Shi" }
+		89 = { "HongJun %d. Shi" }
+		90 = { "HongJun %d. Shi" }
+		91 = { "HongJun %d. Shi" }
+		92 = { "HongJun %d. Shi" }
+		93 = { "HongJun %d. Shi" }
+		94 = { "HongJun %d. Shi" }
+		95 = { "HongJun %d. Shi" }
+		96 = { "HongJun %d. Shi" }
+		97 = { "HongJun %d. Shi" }
+		98 = { "HongJun %d. Shi" }
+		99 = { "HongJun %d. Shi" }
+	}
+}
+
+PRC_CAV_01 = 
+{
+	name = "Cavalry Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+PRC_MOT_01 = 
+{
+	name = "Motorized Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+PRC_MEC_01 = 
+{
+	name = "Mechanized Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+#CHI_ARM_01 -- armor linked to CHI naming group
+#CHI_PAR_01 -- airborne linked to CHI naming group 
+#CHI_MAR_01 -- marines linked to CHI naming group 
+
+PRC_MNT_01 = 
+{
+	name = "Mountain Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+PRC_GAR_01 = 
+{
+	name = "Garrison Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+	
+	}
+}
+

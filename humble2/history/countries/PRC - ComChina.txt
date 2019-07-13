@@ -649,8 +649,8 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Xu Xiangqian"
-	gfx = "generic_army_asia_1"
+	name = "Mao Zedong"
+	gfx = "GFX_portrait_prc_mao_zedong"
 	traits = { brilliant_strategist inflexible_strategist defensive_doctrine trait_cautious logistics_wizard thorough_planner unyielding_defender organisational_leader inspirational_leader }
 	skill = 9
 	attack_skill = 10
@@ -671,9 +671,9 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Ye Jianying"
-	gfx = "generic_army_asia_2"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine trait_cautious logistics_wizard thorough_planner unyielding_defender organisational_leader inspirational_leader }
+	name = "Zhu De"
+	gfx = "GFX_portrait_prc_zhu_de"
+	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer logistics_wizard offensive_doctrine fast_planner aggressive_assaulter }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -702,18 +702,3 @@ create_field_marshal = {
 	planning_skill = 10
 	logistics_skill = 10
 }
-
-create_corps_commander = {
-	name = "Chen Geng"
-	portrait_path = WTT_TODO_ART
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
-	skill = 9
-	attack_skill = 10
-	defense_skill = 10
-	planning_skill = 10
-	logistics_skill = 10
-}
-
-		
-
-
