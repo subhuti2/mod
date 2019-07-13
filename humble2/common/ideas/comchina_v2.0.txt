@@ -389,6 +389,21 @@ ideas = {
 			}
 		}
 
+		PRC_su_yu = {
+			
+			picture = WTT_TODO_ART
+
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		PRC_otto_braun = {
 			
 			picture = WTT_TODO_ART
@@ -498,21 +513,6 @@ ideas = {
 
 	high_command = {
 
-		PRC_su_yu = {
-			
-			picture = WTT_TODO_ART
-
-			allowed = {
-				original_tag = PRC
-			}
-			
-			traits = { army_infantry_5 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 		PRC_xu_xiangqian = {
 			
 			allowed = {
@@ -534,13 +534,28 @@ ideas = {
 				original_tag = PRC
 			}
 			
-			traits = { army_infantry_5 }
+			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
+		PRC_chen_geng = {
+
+			picture = WTT_TODO_ART
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		PRC_chen_yi = {
 
 			picture = generic_army_asia_1
@@ -549,11 +564,24 @@ ideas = {
 				original_tag = PRC
 			}
 			
-			traits = { army_infantry_5 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
+		}
+
+		PRC_ye_jianying = {
+			picture = generic_army_asia_2
+
+			allowed = {
+				original_tag = PRC
+			}
+
+			traits = {
+				army_logistics_2
+			}
+
 		}
 
 		PRC_liang_shen = {
