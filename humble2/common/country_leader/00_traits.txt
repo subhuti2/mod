@@ -258,13 +258,15 @@ leader_traits = {
 
 	cornered_fox5 = {
 		random = no
-		army_defence_factor = 1.50
-		army_morale_Factor = 1.00
-		stability_factor = 0.50
+		stability_factor = 1.50
 		political_power_factor = 1.50
-		war_support_factor = 0.50
-		army_core_attack_factor = 1.00
-		army_core_defence_factor = 1.00
+		war_support_factor = 1.50
+		army_core_attack_factor = 2.00
+		army_core_defence_factor = 2.00
+		army_defence_factor = 2.50
+		army_attack_factor = 2.50
+		army_morale_Factor = 3.00
+		army_org_factor = 3.00
 	}
 
 	permanent_revolutionary = {
@@ -484,9 +486,20 @@ leader_traits = {
 	
 	silent_workhorse5 = {
 		sprite = 13
-		political_power_factor = 0.75
-		war_support_factor = 0.50 
-		stability_factor = 0.75 
+
+		production_speed_infrastructure_factor = 0.9
+		production_speed_industrial_complex_factor = 0.9
+		production_speed_arms_factory_factor = 0.9
+		production_speed_dockyard_factor = 0.9
+		production_speed_synthetic_refinery_factor = 0.9
+		production_speed_bunker_factor = 0.9
+		production_speed_coastal_bunker_factor = 0.9
+		production_speed_anti_air_building_factor = 0.9
+		production_speed_air_base_factor = 0.9
+		production_speed_naval_base_factor = 0.9
+		production_speed_rocket_site_factor = 0.9
+		production_speed_radar_station_factor = 0.9
+		production_speed_nuclear_reactor_factor = 0.9
 		
 		}
 	}
@@ -641,7 +654,8 @@ leader_traits = {
 	
 	military_theorist5 = {
 		sprite = 14
-		experience_gain_army = 1
+		experience_gain_army = 10
+		experience_gain_army_factor = 3
 		
 		ai_will_do = {
 			factor = 500
@@ -1341,14 +1355,9 @@ leader_traits = {
 	
 	army_chief_morale_5 = { # Ground units get 12 more Morale
 		sprite = 5
-		army_morale_factor = 1.2
-		army_speed_factor = 1.5
-		army_org_factor = 1.2
-		army_org_factor = 1.2
-		army_attack_factor = 1.5
-		army_defence_factor = 1.5
-		training_time_army_factor = -0.5
-		
+
+		army_speed_factor = 3
+		training_time_army_factor = -0.9
 	}
 	
 	
@@ -1792,10 +1801,11 @@ leader_traits = {
 	
 	air_chief_ground_support_5 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
-		army_bonus_air_superiority_factor = 0.75
-		air_night_penalty = -0.6
-		air_accidents_factor = -0.3
-		air_weather_penalty = -0.6
+
+		army_bonus_air_superiority_factor = 1
+		air_night_penalty = -0.9
+		air_accidents_factor = -0.5
+		air_weather_penalty = -0.9
 		
 	}
 	
@@ -2256,21 +2266,20 @@ leader_traits = {
 	
 	navy_chief_maneuver_5 = { # Naval units move 15% faster
 		sprite = 3
-		navy_carrier_air_attack_factor = 0.5
-		navy_carrier_air_targetting_factor = 0.6
-		navy_carrier_air_agility_factor = 0.75
-		amphibious_invasion = 0.75
-		naval_speed_factor = 0.75
-		navy_capital_ship_attack_factor = 0.15
-		navy_capital_ship_defence_factor = 0.15
-		navy_screen_attack_factor = 0.15
-		navy_screen_defence_factor = 0.15
-		convoy_raiding_efficiency_factor = 0.2
-		navy_submarine_detection_factor = 0.2
-		navy_anti_air_attack_factor = 0.2
-		navy_max_range_factor = 0.15
+		navy_carrier_air_attack_factor = 1
+		navy_carrier_air_targetting_factor = 1.2
+		navy_carrier_air_agility_factor = 1.5
+		amphibious_invasion = 1.5
+		naval_speed_factor = 1.5
+		navy_capital_ship_attack_factor = 1.5
+		navy_capital_ship_defence_factor = 1.5
+		navy_screen_attack_factor = 1.5
+		navy_screen_defence_factor = 1.5
+		convoy_raiding_efficiency_factor = 2
+		navy_submarine_detection_factor = 2
+		navy_anti_air_attack_factor = 2
+		navy_max_range_factor = 1.5
 		sortie_efficiency = 0.2
-		
 	}
 	
 	
