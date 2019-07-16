@@ -1,0 +1,473 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+PRC_INF_01 = 
+{
+	name = "Infantry Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		900 = { "HongJun %d. Shi" }
+		901 = { "HongJun %d. Shi" }
+		902 = { "HongJun %d. Shi" }
+		903 = { "HongJun %d. Shi" }
+		904 = { "HongJun %d. Shi" }
+		905 = { "HongJun %d. Shi" }
+		906 = { "HongJun %d. Shi" }
+		907 = { "HongJun %d. Shi" }
+		908 = { "HongJun %d. Shi" }
+		909 = { "HongJun %d. Shi" }
+		910 = { "HongJun %d. Shi" }
+		911 = { "HongJun %d. Shi" }
+		912 = { "HongJun %d. Shi" }
+		913 = { "HongJun %d. Shi" }
+		914 = { "HongJun %d. Shi" }
+		915 = { "HongJun %d. Shi" }
+		916 = { "HongJun %d. Shi" }
+		917 = { "HongJun %d. Shi" }
+		918 = { "HongJun %d. Shi" }
+		919 = { "HongJun %d. Shi" }
+		920 = { "HongJun %d. Shi" }
+		921 = { "HongJun %d. Shi" }
+		922 = { "HongJun %d. Shi" }
+		923 = { "HongJun %d. Shi" }
+		924 = { "HongJun %d. Shi" }
+		925 = { "HongJun %d. Shi" }
+		926 = { "HongJun %d. Shi" }
+		927 = { "HongJun %d. Shi" }
+		928 = { "HongJun %d. Shi" }
+		929 = { "HongJun %d. Shi" }
+		930 = { "HongJun %d. Shi" }
+		931 = { "HongJun %d. Shi" }
+		932 = { "HongJun %d. Shi" }
+		933 = { "HongJun %d. Shi" }
+		934 = { "HongJun %d. Shi" }
+		935 = { "HongJun %d. Shi" }
+		936 = { "HongJun %d. Shi" }
+		937 = { "HongJun %d. Shi" }
+		938 = { "HongJun %d. Shi" }
+		939 = { "HongJun %d. Shi" }
+		940 = { "HongJun %d. Shi" }
+		941 = { "HongJun %d. Shi" }
+		942 = { "HongJun %d. Shi" }
+		943 = { "HongJun %d. Shi" }
+		944 = { "HongJun %d. Shi" }
+		945 = { "HongJun %d. Shi" }
+		946 = { "HongJun %d. Shi" }
+		947 = { "HongJun %d. Shi" }
+		948 = { "HongJun %d. Shi" }
+		949 = { "HongJun %d. Shi" }
+		950 = { "HongJun %d. Shi" }
+		951 = { "HongJun %d. Shi" }
+		952 = { "HongJun %d. Shi" }
+		953 = { "HongJun %d. Shi" }
+		954 = { "HongJun %d. Shi" }
+		955 = { "HongJun %d. Shi" }
+		956 = { "HongJun %d. Shi" }
+		957 = { "HongJun %d. Shi" }
+		958 = { "HongJun %d. Shi" }
+		959 = { "HongJun %d. Shi" }
+		960 = { "HongJun %d. Shi" }
+		961 = { "HongJun %d. Shi" }
+		962 = { "HongJun %d. Shi" }
+		963 = { "HongJun %d. Shi" }
+		964 = { "HongJun %d. Shi" }
+		965 = { "HongJun %d. Shi" }
+		966 = { "HongJun %d. Shi" }
+		967 = { "HongJun %d. Shi" }
+		968 = { "HongJun %d. Shi" }
+		969 = { "HongJun %d. Shi" }
+		970 = { "HongJun %d. Shi" }
+		971 = { "HongJun %d. Shi" }
+		972 = { "HongJun %d. Shi" }
+		973 = { "HongJun %d. Shi" }
+		974 = { "HongJun %d. Shi" }
+		975 = { "HongJun %d. Shi" }
+		976 = { "HongJun %d. Shi" }
+		977 = { "HongJun %d. Shi" }
+		978 = { "HongJun %d. Shi" }
+		979 = { "HongJun %d. Shi" }
+		980 = { "HongJun %d. Shi" }
+		981 = { "HongJun %d. Shi" }
+		982 = { "HongJun %d. Shi" }
+		983 = { "HongJun %d. Shi" }
+		984 = { "HongJun %d. Shi" }
+		985 = { "HongJun %d. Shi" }
+		986 = { "HongJun %d. Shi" }
+		987 = { "HongJun %d. Shi" }
+		988 = { "HongJun %d. Shi" }
+		989 = { "HongJun %d. Shi" }
+		990 = { "HongJun %d. Shi" }
+		991 = { "HongJun %d. Shi" }
+		992 = { "HongJun %d. Shi" }
+		993 = { "HongJun %d. Shi" }
+		994 = { "HongJun %d. Shi" }
+		995 = { "HongJun %d. Shi" }
+		996 = { "HongJun %d. Shi" }
+		997 = { "HongJun %d. Shi" }
+		998 = { "HongJun %d. Shi" }
+		999 = { "HongJun %d. Shi" }
+	}
+}
+
+PRC_CAV_01 = 
+{
+	name = "Cavalry Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+PRC_MOT_01 = 
+{
+	name = "Motorized Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+PRC_MEC_01 = 
+{
+	name = "Mechanized Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+
+	}
+}
+
+#CHI_ARM_01 -- armor linked to CHI naming group
+#CHI_PAR_01 -- airborne linked to CHI naming group 
+#CHI_MAR_01 -- marines linked to CHI naming group 
+
+PRC_MNT_01 = 
+{
+	name = "Mountain Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { PRC_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		900 = { "HongJun %d. Shi" }
+		901 = { "HongJun %d. Shi" }
+		902 = { "HongJun %d. Shi" }
+		903 = { "HongJun %d. Shi" }
+		904 = { "HongJun %d. Shi" }
+		905 = { "HongJun %d. Shi" }
+		906 = { "HongJun %d. Shi" }
+		907 = { "HongJun %d. Shi" }
+		908 = { "HongJun %d. Shi" }
+		909 = { "HongJun %d. Shi" }
+		910 = { "HongJun %d. Shi" }
+		911 = { "HongJun %d. Shi" }
+		912 = { "HongJun %d. Shi" }
+		913 = { "HongJun %d. Shi" }
+		914 = { "HongJun %d. Shi" }
+		915 = { "HongJun %d. Shi" }
+		916 = { "HongJun %d. Shi" }
+		917 = { "HongJun %d. Shi" }
+		918 = { "HongJun %d. Shi" }
+		919 = { "HongJun %d. Shi" }
+		920 = { "HongJun %d. Shi" }
+		921 = { "HongJun %d. Shi" }
+		922 = { "HongJun %d. Shi" }
+		923 = { "HongJun %d. Shi" }
+		924 = { "HongJun %d. Shi" }
+		925 = { "HongJun %d. Shi" }
+		926 = { "HongJun %d. Shi" }
+		927 = { "HongJun %d. Shi" }
+		928 = { "HongJun %d. Shi" }
+		929 = { "HongJun %d. Shi" }
+		930 = { "HongJun %d. Shi" }
+		931 = { "HongJun %d. Shi" }
+		932 = { "HongJun %d. Shi" }
+		933 = { "HongJun %d. Shi" }
+		934 = { "HongJun %d. Shi" }
+		935 = { "HongJun %d. Shi" }
+		936 = { "HongJun %d. Shi" }
+		937 = { "HongJun %d. Shi" }
+		938 = { "HongJun %d. Shi" }
+		939 = { "HongJun %d. Shi" }
+		940 = { "HongJun %d. Shi" }
+		941 = { "HongJun %d. Shi" }
+		942 = { "HongJun %d. Shi" }
+		943 = { "HongJun %d. Shi" }
+		944 = { "HongJun %d. Shi" }
+		945 = { "HongJun %d. Shi" }
+		946 = { "HongJun %d. Shi" }
+		947 = { "HongJun %d. Shi" }
+		948 = { "HongJun %d. Shi" }
+		949 = { "HongJun %d. Shi" }
+		950 = { "HongJun %d. Shi" }
+		951 = { "HongJun %d. Shi" }
+		952 = { "HongJun %d. Shi" }
+		953 = { "HongJun %d. Shi" }
+		954 = { "HongJun %d. Shi" }
+		955 = { "HongJun %d. Shi" }
+		956 = { "HongJun %d. Shi" }
+		957 = { "HongJun %d. Shi" }
+		958 = { "HongJun %d. Shi" }
+		959 = { "HongJun %d. Shi" }
+		960 = { "HongJun %d. Shi" }
+		961 = { "HongJun %d. Shi" }
+		962 = { "HongJun %d. Shi" }
+		963 = { "HongJun %d. Shi" }
+		964 = { "HongJun %d. Shi" }
+		965 = { "HongJun %d. Shi" }
+		966 = { "HongJun %d. Shi" }
+		967 = { "HongJun %d. Shi" }
+		968 = { "HongJun %d. Shi" }
+		969 = { "HongJun %d. Shi" }
+		970 = { "HongJun %d. Shi" }
+		971 = { "HongJun %d. Shi" }
+		972 = { "HongJun %d. Shi" }
+		973 = { "HongJun %d. Shi" }
+		974 = { "HongJun %d. Shi" }
+		975 = { "HongJun %d. Shi" }
+		976 = { "HongJun %d. Shi" }
+		977 = { "HongJun %d. Shi" }
+		978 = { "HongJun %d. Shi" }
+		979 = { "HongJun %d. Shi" }
+		980 = { "HongJun %d. Shi" }
+		981 = { "HongJun %d. Shi" }
+		982 = { "HongJun %d. Shi" }
+		983 = { "HongJun %d. Shi" }
+		984 = { "HongJun %d. Shi" }
+		985 = { "HongJun %d. Shi" }
+		986 = { "HongJun %d. Shi" }
+		987 = { "HongJun %d. Shi" }
+		988 = { "HongJun %d. Shi" }
+		989 = { "HongJun %d. Shi" }
+		990 = { "HongJun %d. Shi" }
+		991 = { "HongJun %d. Shi" }
+		992 = { "HongJun %d. Shi" }
+		993 = { "HongJun %d. Shi" }
+		994 = { "HongJun %d. Shi" }
+		995 = { "HongJun %d. Shi" }
+		996 = { "HongJun %d. Shi" }
+		997 = { "HongJun %d. Shi" }
+		998 = { "HongJun %d. Shi" }
+		999 = { "HongJun %d. Shi" }
+
+	}
+}
+
+PRC_GAR_01 = 
+{
+	name = "Garrison Unit"
+
+	for_countries = { PRC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CHI_INF_01 }
+
+	fallback_name = "HongJun %d. Shi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		900 = { "HongJun %d. Shi" }
+		901 = { "HongJun %d. Shi" }
+		902 = { "HongJun %d. Shi" }
+		903 = { "HongJun %d. Shi" }
+		904 = { "HongJun %d. Shi" }
+		905 = { "HongJun %d. Shi" }
+		906 = { "HongJun %d. Shi" }
+		907 = { "HongJun %d. Shi" }
+		908 = { "HongJun %d. Shi" }
+		909 = { "HongJun %d. Shi" }
+		910 = { "HongJun %d. Shi" }
+		911 = { "HongJun %d. Shi" }
+		912 = { "HongJun %d. Shi" }
+		913 = { "HongJun %d. Shi" }
+		914 = { "HongJun %d. Shi" }
+		915 = { "HongJun %d. Shi" }
+		916 = { "HongJun %d. Shi" }
+		917 = { "HongJun %d. Shi" }
+		918 = { "HongJun %d. Shi" }
+		919 = { "HongJun %d. Shi" }
+		920 = { "HongJun %d. Shi" }
+		921 = { "HongJun %d. Shi" }
+		922 = { "HongJun %d. Shi" }
+		923 = { "HongJun %d. Shi" }
+		924 = { "HongJun %d. Shi" }
+		925 = { "HongJun %d. Shi" }
+		926 = { "HongJun %d. Shi" }
+		927 = { "HongJun %d. Shi" }
+		928 = { "HongJun %d. Shi" }
+		929 = { "HongJun %d. Shi" }
+		930 = { "HongJun %d. Shi" }
+		931 = { "HongJun %d. Shi" }
+		932 = { "HongJun %d. Shi" }
+		933 = { "HongJun %d. Shi" }
+		934 = { "HongJun %d. Shi" }
+		935 = { "HongJun %d. Shi" }
+		936 = { "HongJun %d. Shi" }
+		937 = { "HongJun %d. Shi" }
+		938 = { "HongJun %d. Shi" }
+		939 = { "HongJun %d. Shi" }
+		940 = { "HongJun %d. Shi" }
+		941 = { "HongJun %d. Shi" }
+		942 = { "HongJun %d. Shi" }
+		943 = { "HongJun %d. Shi" }
+		944 = { "HongJun %d. Shi" }
+		945 = { "HongJun %d. Shi" }
+		946 = { "HongJun %d. Shi" }
+		947 = { "HongJun %d. Shi" }
+		948 = { "HongJun %d. Shi" }
+		949 = { "HongJun %d. Shi" }
+		950 = { "HongJun %d. Shi" }
+		951 = { "HongJun %d. Shi" }
+		952 = { "HongJun %d. Shi" }
+		953 = { "HongJun %d. Shi" }
+		954 = { "HongJun %d. Shi" }
+		955 = { "HongJun %d. Shi" }
+		956 = { "HongJun %d. Shi" }
+		957 = { "HongJun %d. Shi" }
+		958 = { "HongJun %d. Shi" }
+		959 = { "HongJun %d. Shi" }
+		960 = { "HongJun %d. Shi" }
+		961 = { "HongJun %d. Shi" }
+		962 = { "HongJun %d. Shi" }
+		963 = { "HongJun %d. Shi" }
+		964 = { "HongJun %d. Shi" }
+		965 = { "HongJun %d. Shi" }
+		966 = { "HongJun %d. Shi" }
+		967 = { "HongJun %d. Shi" }
+		968 = { "HongJun %d. Shi" }
+		969 = { "HongJun %d. Shi" }
+		970 = { "HongJun %d. Shi" }
+		971 = { "HongJun %d. Shi" }
+		972 = { "HongJun %d. Shi" }
+		973 = { "HongJun %d. Shi" }
+		974 = { "HongJun %d. Shi" }
+		975 = { "HongJun %d. Shi" }
+		976 = { "HongJun %d. Shi" }
+		977 = { "HongJun %d. Shi" }
+		978 = { "HongJun %d. Shi" }
+		979 = { "HongJun %d. Shi" }
+		980 = { "HongJun %d. Shi" }
+		981 = { "HongJun %d. Shi" }
+		982 = { "HongJun %d. Shi" }
+		983 = { "HongJun %d. Shi" }
+		984 = { "HongJun %d. Shi" }
+		985 = { "HongJun %d. Shi" }
+		986 = { "HongJun %d. Shi" }
+		987 = { "HongJun %d. Shi" }
+		988 = { "HongJun %d. Shi" }
+		989 = { "HongJun %d. Shi" }
+		990 = { "HongJun %d. Shi" }
+		991 = { "HongJun %d. Shi" }
+		992 = { "HongJun %d. Shi" }
+		993 = { "HongJun %d. Shi" }
+		994 = { "HongJun %d. Shi" }
+		995 = { "HongJun %d. Shi" }
+		996 = { "HongJun %d. Shi" }
+		997 = { "HongJun %d. Shi" }
+		998 = { "HongJun %d. Shi" }
+		999 = { "HongJun %d. Shi" }
+
+	}
+}
+
