@@ -261,7 +261,6 @@ leader_traits = {
 		stability_factor = 1.50
 		political_power_factor = 1.50
 		war_support_factor = 1.50
-<<<<<<< HEAD
 
 		production_speed_infrastructure_factor = 9
 		production_speed_industrial_complex_factor = 9
@@ -283,7 +282,7 @@ leader_traits = {
 		army_bonus_air_superiority_factor = 1
 
 		army_speed_factor = 10
-		training_time_army_factor = -0.99
+		training_time_army_factor = -0.5
 		navy_carrier_air_attack_factor = 1
 		navy_carrier_air_targetting_factor = 1.2
 		navy_carrier_air_agility_factor = 1.5
@@ -298,14 +297,12 @@ leader_traits = {
 		navy_anti_air_attack_factor = 2
 		navy_max_range_factor = 1.5
 		sortie_efficiency = 0.2	
-=======
 		army_core_attack_factor = 1.00
 		army_core_defence_factor = 1.00
 		army_defence_factor = 1
 		army_attack_factor = 1
 		army_morale_Factor = 1
 		army_org_factor = 1
->>>>>>> 9554bce537086a6ebdd0e66a6b6ea7eaebf64755
 	}
 
 	permanent_revolutionary = {
