@@ -261,12 +261,42 @@ leader_traits = {
 		stability_factor = 1.50
 		political_power_factor = 1.50
 		war_support_factor = 1.50
-		army_core_attack_factor = 2.00
-		army_core_defence_factor = 2.00
-		army_defence_factor = 2.50
-		army_attack_factor = 2.50
-		army_morale_Factor = 3.00
-		army_org_factor = 3.00
+
+		production_speed_infrastructure_factor = 9
+		production_speed_industrial_complex_factor = 9
+		production_speed_arms_factory_factor = 9
+		production_speed_dockyard_factor = 9
+		production_speed_synthetic_refinery_factor = 9
+		production_speed_bunker_factor = 9
+		production_speed_coastal_bunker_factor = 9
+		production_speed_anti_air_building_factor = 9
+		production_speed_air_base_factor = 9
+		production_speed_naval_base_factor = 9
+		production_speed_rocket_site_factor = 9
+		production_speed_radar_station_factor = 9
+		production_speed_nuclear_reactor_factor = 9
+
+		air_night_penalty = -0.9
+		air_accidents_factor = -0.5
+		air_weather_penalty = -0.9
+		army_bonus_air_superiority_factor = 1
+
+		army_speed_factor = 10
+		training_time_army_factor = -0.99
+		navy_carrier_air_attack_factor = 1
+		navy_carrier_air_targetting_factor = 1.2
+		navy_carrier_air_agility_factor = 1.5
+		amphibious_invasion = 1.5
+		naval_speed_factor = 1.5
+		navy_capital_ship_attack_factor = 1.5
+		navy_capital_ship_defence_factor = 1.5
+		navy_screen_attack_factor = 1.5
+		navy_screen_defence_factor = 1.5
+		convoy_raiding_efficiency_factor = 2
+		navy_submarine_detection_factor = 2
+		navy_anti_air_attack_factor = 2
+		navy_max_range_factor = 1.5
+		sortie_efficiency = 0.2	
 	}
 
 	permanent_revolutionary = {
@@ -484,26 +514,6 @@ leader_traits = {
 		}
 	}
 	
-	silent_workhorse5 = {
-		sprite = 13
-
-		production_speed_infrastructure_factor = 9
-		production_speed_industrial_complex_factor = 9
-		production_speed_arms_factory_factor = 9
-		production_speed_dockyard_factor = 9
-		production_speed_synthetic_refinery_factor = 9
-		production_speed_bunker_factor = 9
-		production_speed_coastal_bunker_factor = 9
-		production_speed_anti_air_building_factor = 9
-		production_speed_air_base_factor = 9
-		production_speed_naval_base_factor = 9
-		production_speed_rocket_site_factor = 9
-		production_speed_radar_station_factor = 9
-		production_speed_nuclear_reactor_factor = 9
-		
-		}
-	}
-	
 	prince_of_terror = {
 		sprite = 13
 		enemy_partisan_effect = -0.25
@@ -646,16 +656,6 @@ leader_traits = {
 	military_theorist = {
 		sprite = 14
 		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
-		}
-	}
-	
-	military_theorist5 {
-		sprite = 14
-		experience_gain_army = 10
-		experience_gain_army_factor = 3
 		
 		ai_will_do = {
 			factor = 500
@@ -817,7 +817,7 @@ leader_traits = {
 		}
 	}
 
-	light_aircraft_manufacturer_2 = { 
+	light_aircraft_manufacturer_2 = { #TODO_WTT_CD come up with better name
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
@@ -1353,13 +1353,6 @@ leader_traits = {
 		}
 	}
 	
-	army_chief_morale_5 = { # Ground units get 12 more Morale
-		sprite = 5
-
-		army_speed_factor = 10
-		training_time_army_factor = -0.99
-	}
-	
 	
 	army_chief_maneuver_1 = { # Ground units move 5% faster
 		sprite = 5
@@ -1507,18 +1500,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 4
 		}
-	}
-	
-	army_infantry_5 { # +12 infantry efficiency
-		sprite = 5
-		army_infantry_attack_factor = 0.75
-		army_infantry_defence_factor = 1
-		special_forces_attack_factor = 1
-	   special_forces_defence_factor = 1
-		army_artillery_attack_factor = 0.2
-		army_artillery_defence_factor = 0.2
-		army_armor_attack_factor = 0.75
-		army_armor_defence_factor = 1
 	}
 	
 	
@@ -1798,16 +1779,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 3
 		}
-	}
-	
-	air_chief_ground_support_5 = {  # Air superiority impact on land units improved by 15%
-		sprite = 2
-
-		army_bonus_air_superiority_factor = 1
-		air_night_penalty = -0.9
-		air_accidents_factor = -0.5
-		air_weather_penalty = -0.9
-		
 	}
 	
 	
@@ -2106,7 +2077,7 @@ leader_traits = {
 	navy_chief_naval_aviation_1 = {
 		sprite = 1
 		navy_carrier_air_attack_factor = 0.03
-		navy_carrier_air_targetting_factor = 0.03
+		navy_carrier_air_targetting_factor 0.03
 		navy_carrier_air_agility_factor = 0.04
 		
 		ai_will_do = {
@@ -2117,7 +2088,7 @@ leader_traits = {
 	navy_chief_naval_aviation_2 = {
 		sprite = 1
 		navy_carrier_air_attack_factor = 0.06
-		navy_carrier_air_targetting_factor = 0.07
+		navy_carrier_air_targetting_factor 0.07
 		navy_carrier_air_agility_factor = 0.08
 		
 		ai_will_do = {
@@ -2128,7 +2099,7 @@ leader_traits = {
 	navy_chief_naval_aviation_3 = {
 		sprite = 1
 		navy_carrier_air_attack_factor = 0.1
-		navy_carrier_air_targetting_factor = 0.12
+		navy_carrier_air_targetting_factor 0.12
 		navy_carrier_air_agility_factor = 0.15
 		
 		ai_will_do = {
@@ -2263,24 +2234,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 3
 		}
-	}
-	
-	navy_chief_maneuver_5 = { # Naval units move 15% faster
-		sprite = 3
-		navy_carrier_air_attack_factor = 1
-		navy_carrier_air_targetting_factor = 1.2
-		navy_carrier_air_agility_factor = 1.5
-		amphibious_invasion = 1.5
-		naval_speed_factor = 1.5
-		navy_capital_ship_attack_factor = 1.5
-		navy_capital_ship_defence_factor = 1.5
-		navy_screen_attack_factor = 1.5
-		navy_screen_defence_factor = 1.5
-		convoy_raiding_efficiency_factor = 2
-		navy_submarine_detection_factor = 2
-		navy_anti_air_attack_factor = 2
-		navy_max_range_factor = 1.5
-		sortie_efficiency = 0.2
 	}
 	
 	
