@@ -49,6 +49,7 @@ PRC_INF_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+		1 = { "HongJun %d. Shi" }
 		900 = { "HongJun %d. Shi" }
 		901 = { "HongJun %d. Shi" }
 		902 = { "HongJun %d. Shi" }
@@ -244,7 +245,7 @@ PRC_MNT_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		900 = { "HongJun %d. Shi" }
+		1 = { "HongJun %d. Shi" }
 		901 = { "HongJun %d. Shi" }
 		902 = { "HongJun %d. Shi" }
 		903 = { "HongJun %d. Shi" }
@@ -367,6 +368,7 @@ PRC_GAR_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
+		1 = { "HongJun %d. Shi" }
 		900 = { "HongJun %d. Shi" }
 		901 = { "HongJun %d. Shi" }
 		902 = { "HongJun %d. Shi" }
