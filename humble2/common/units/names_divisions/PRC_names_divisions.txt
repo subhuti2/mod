@@ -43,113 +43,15 @@ PRC_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { PRC_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "HongJun %d. Shi" }
-		900 = { "HongJun %d. Shi" }
-		901 = { "HongJun %d. Shi" }
-		902 = { "HongJun %d. Shi" }
-		903 = { "HongJun %d. Shi" }
-		904 = { "HongJun %d. Shi" }
-		905 = { "HongJun %d. Shi" }
-		906 = { "HongJun %d. Shi" }
-		907 = { "HongJun %d. Shi" }
-		908 = { "HongJun %d. Shi" }
-		909 = { "HongJun %d. Shi" }
-		910 = { "HongJun %d. Shi" }
-		911 = { "HongJun %d. Shi" }
-		912 = { "HongJun %d. Shi" }
-		913 = { "HongJun %d. Shi" }
-		914 = { "HongJun %d. Shi" }
-		915 = { "HongJun %d. Shi" }
-		916 = { "HongJun %d. Shi" }
-		917 = { "HongJun %d. Shi" }
-		918 = { "HongJun %d. Shi" }
-		919 = { "HongJun %d. Shi" }
-		920 = { "HongJun %d. Shi" }
-		921 = { "HongJun %d. Shi" }
-		922 = { "HongJun %d. Shi" }
-		923 = { "HongJun %d. Shi" }
-		924 = { "HongJun %d. Shi" }
-		925 = { "HongJun %d. Shi" }
-		926 = { "HongJun %d. Shi" }
-		927 = { "HongJun %d. Shi" }
-		928 = { "HongJun %d. Shi" }
-		929 = { "HongJun %d. Shi" }
-		930 = { "HongJun %d. Shi" }
-		931 = { "HongJun %d. Shi" }
-		932 = { "HongJun %d. Shi" }
-		933 = { "HongJun %d. Shi" }
-		934 = { "HongJun %d. Shi" }
-		935 = { "HongJun %d. Shi" }
-		936 = { "HongJun %d. Shi" }
-		937 = { "HongJun %d. Shi" }
-		938 = { "HongJun %d. Shi" }
-		939 = { "HongJun %d. Shi" }
-		940 = { "HongJun %d. Shi" }
-		941 = { "HongJun %d. Shi" }
-		942 = { "HongJun %d. Shi" }
-		943 = { "HongJun %d. Shi" }
-		944 = { "HongJun %d. Shi" }
-		945 = { "HongJun %d. Shi" }
-		946 = { "HongJun %d. Shi" }
-		947 = { "HongJun %d. Shi" }
-		948 = { "HongJun %d. Shi" }
-		949 = { "HongJun %d. Shi" }
-		950 = { "HongJun %d. Shi" }
-		951 = { "HongJun %d. Shi" }
-		952 = { "HongJun %d. Shi" }
-		953 = { "HongJun %d. Shi" }
-		954 = { "HongJun %d. Shi" }
-		955 = { "HongJun %d. Shi" }
-		956 = { "HongJun %d. Shi" }
-		957 = { "HongJun %d. Shi" }
-		958 = { "HongJun %d. Shi" }
-		959 = { "HongJun %d. Shi" }
-		960 = { "HongJun %d. Shi" }
-		961 = { "HongJun %d. Shi" }
-		962 = { "HongJun %d. Shi" }
-		963 = { "HongJun %d. Shi" }
-		964 = { "HongJun %d. Shi" }
-		965 = { "HongJun %d. Shi" }
-		966 = { "HongJun %d. Shi" }
-		967 = { "HongJun %d. Shi" }
-		968 = { "HongJun %d. Shi" }
-		969 = { "HongJun %d. Shi" }
-		970 = { "HongJun %d. Shi" }
-		971 = { "HongJun %d. Shi" }
-		972 = { "HongJun %d. Shi" }
-		973 = { "HongJun %d. Shi" }
-		974 = { "HongJun %d. Shi" }
-		975 = { "HongJun %d. Shi" }
-		976 = { "HongJun %d. Shi" }
-		977 = { "HongJun %d. Shi" }
-		978 = { "HongJun %d. Shi" }
-		979 = { "HongJun %d. Shi" }
-		980 = { "HongJun %d. Shi" }
-		981 = { "HongJun %d. Shi" }
-		982 = { "HongJun %d. Shi" }
-		983 = { "HongJun %d. Shi" }
-		984 = { "HongJun %d. Shi" }
-		985 = { "HongJun %d. Shi" }
-		986 = { "HongJun %d. Shi" }
-		987 = { "HongJun %d. Shi" }
-		988 = { "HongJun %d. Shi" }
-		989 = { "HongJun %d. Shi" }
-		990 = { "HongJun %d. Shi" }
-		991 = { "HongJun %d. Shi" }
-		992 = { "HongJun %d. Shi" }
-		993 = { "HongJun %d. Shi" }
-		994 = { "HongJun %d. Shi" }
-		995 = { "HongJun %d. Shi" }
-		996 = { "HongJun %d. Shi" }
-		997 = { "HongJun %d. Shi" }
-		998 = { "HongJun %d. Shi" }
-		999 = { "HongJun %d. Shi" }
+		1 = { "%d. Shi" }
+		2 = { "%d. Shi" }
+		3 = { "%d. Shi" }
 	}
 }
 
@@ -166,13 +68,15 @@ PRC_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { CHI_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-
+		11 = { "%d. Shi" }
+		12 = { "%d. Shi" }
+		13 = { "%d. Shi" }
 	}
 }
 
@@ -189,13 +93,15 @@ PRC_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { PRC_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-
+		21 = { "%d. Shi" }
+		22 = { "%d. Shi" }
+		23 = { "%d. Shi" }
 	}
 }
 
@@ -212,13 +118,15 @@ PRC_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { PRC_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-
+		31 = { "%d. Shi" }
+		32 = { "%d. Shi" }
+		33 = { "%d. Shi" }
 	}
 }
 
@@ -239,113 +147,15 @@ PRC_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { PRC_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "HongJun %d. Shi" }
-		901 = { "HongJun %d. Shi" }
-		902 = { "HongJun %d. Shi" }
-		903 = { "HongJun %d. Shi" }
-		904 = { "HongJun %d. Shi" }
-		905 = { "HongJun %d. Shi" }
-		906 = { "HongJun %d. Shi" }
-		907 = { "HongJun %d. Shi" }
-		908 = { "HongJun %d. Shi" }
-		909 = { "HongJun %d. Shi" }
-		910 = { "HongJun %d. Shi" }
-		911 = { "HongJun %d. Shi" }
-		912 = { "HongJun %d. Shi" }
-		913 = { "HongJun %d. Shi" }
-		914 = { "HongJun %d. Shi" }
-		915 = { "HongJun %d. Shi" }
-		916 = { "HongJun %d. Shi" }
-		917 = { "HongJun %d. Shi" }
-		918 = { "HongJun %d. Shi" }
-		919 = { "HongJun %d. Shi" }
-		920 = { "HongJun %d. Shi" }
-		921 = { "HongJun %d. Shi" }
-		922 = { "HongJun %d. Shi" }
-		923 = { "HongJun %d. Shi" }
-		924 = { "HongJun %d. Shi" }
-		925 = { "HongJun %d. Shi" }
-		926 = { "HongJun %d. Shi" }
-		927 = { "HongJun %d. Shi" }
-		928 = { "HongJun %d. Shi" }
-		929 = { "HongJun %d. Shi" }
-		930 = { "HongJun %d. Shi" }
-		931 = { "HongJun %d. Shi" }
-		932 = { "HongJun %d. Shi" }
-		933 = { "HongJun %d. Shi" }
-		934 = { "HongJun %d. Shi" }
-		935 = { "HongJun %d. Shi" }
-		936 = { "HongJun %d. Shi" }
-		937 = { "HongJun %d. Shi" }
-		938 = { "HongJun %d. Shi" }
-		939 = { "HongJun %d. Shi" }
-		940 = { "HongJun %d. Shi" }
-		941 = { "HongJun %d. Shi" }
-		942 = { "HongJun %d. Shi" }
-		943 = { "HongJun %d. Shi" }
-		944 = { "HongJun %d. Shi" }
-		945 = { "HongJun %d. Shi" }
-		946 = { "HongJun %d. Shi" }
-		947 = { "HongJun %d. Shi" }
-		948 = { "HongJun %d. Shi" }
-		949 = { "HongJun %d. Shi" }
-		950 = { "HongJun %d. Shi" }
-		951 = { "HongJun %d. Shi" }
-		952 = { "HongJun %d. Shi" }
-		953 = { "HongJun %d. Shi" }
-		954 = { "HongJun %d. Shi" }
-		955 = { "HongJun %d. Shi" }
-		956 = { "HongJun %d. Shi" }
-		957 = { "HongJun %d. Shi" }
-		958 = { "HongJun %d. Shi" }
-		959 = { "HongJun %d. Shi" }
-		960 = { "HongJun %d. Shi" }
-		961 = { "HongJun %d. Shi" }
-		962 = { "HongJun %d. Shi" }
-		963 = { "HongJun %d. Shi" }
-		964 = { "HongJun %d. Shi" }
-		965 = { "HongJun %d. Shi" }
-		966 = { "HongJun %d. Shi" }
-		967 = { "HongJun %d. Shi" }
-		968 = { "HongJun %d. Shi" }
-		969 = { "HongJun %d. Shi" }
-		970 = { "HongJun %d. Shi" }
-		971 = { "HongJun %d. Shi" }
-		972 = { "HongJun %d. Shi" }
-		973 = { "HongJun %d. Shi" }
-		974 = { "HongJun %d. Shi" }
-		975 = { "HongJun %d. Shi" }
-		976 = { "HongJun %d. Shi" }
-		977 = { "HongJun %d. Shi" }
-		978 = { "HongJun %d. Shi" }
-		979 = { "HongJun %d. Shi" }
-		980 = { "HongJun %d. Shi" }
-		981 = { "HongJun %d. Shi" }
-		982 = { "HongJun %d. Shi" }
-		983 = { "HongJun %d. Shi" }
-		984 = { "HongJun %d. Shi" }
-		985 = { "HongJun %d. Shi" }
-		986 = { "HongJun %d. Shi" }
-		987 = { "HongJun %d. Shi" }
-		988 = { "HongJun %d. Shi" }
-		989 = { "HongJun %d. Shi" }
-		990 = { "HongJun %d. Shi" }
-		991 = { "HongJun %d. Shi" }
-		992 = { "HongJun %d. Shi" }
-		993 = { "HongJun %d. Shi" }
-		994 = { "HongJun %d. Shi" }
-		995 = { "HongJun %d. Shi" }
-		996 = { "HongJun %d. Shi" }
-		997 = { "HongJun %d. Shi" }
-		998 = { "HongJun %d. Shi" }
-		999 = { "HongJun %d. Shi" }
-
+		41 = { "%d. Shi" }
+		42 = { "%d. Shi" }
+		43 = { "%d. Shi" }
 	}
 }
 
@@ -362,114 +172,15 @@ PRC_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { CHI_INF_01 }
 
-	fallback_name = "HongJun %d. Shi"
+	fallback_name = "%d. Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "HongJun %d. Shi" }
-		900 = { "HongJun %d. Shi" }
-		901 = { "HongJun %d. Shi" }
-		902 = { "HongJun %d. Shi" }
-		903 = { "HongJun %d. Shi" }
-		904 = { "HongJun %d. Shi" }
-		905 = { "HongJun %d. Shi" }
-		906 = { "HongJun %d. Shi" }
-		907 = { "HongJun %d. Shi" }
-		908 = { "HongJun %d. Shi" }
-		909 = { "HongJun %d. Shi" }
-		910 = { "HongJun %d. Shi" }
-		911 = { "HongJun %d. Shi" }
-		912 = { "HongJun %d. Shi" }
-		913 = { "HongJun %d. Shi" }
-		914 = { "HongJun %d. Shi" }
-		915 = { "HongJun %d. Shi" }
-		916 = { "HongJun %d. Shi" }
-		917 = { "HongJun %d. Shi" }
-		918 = { "HongJun %d. Shi" }
-		919 = { "HongJun %d. Shi" }
-		920 = { "HongJun %d. Shi" }
-		921 = { "HongJun %d. Shi" }
-		922 = { "HongJun %d. Shi" }
-		923 = { "HongJun %d. Shi" }
-		924 = { "HongJun %d. Shi" }
-		925 = { "HongJun %d. Shi" }
-		926 = { "HongJun %d. Shi" }
-		927 = { "HongJun %d. Shi" }
-		928 = { "HongJun %d. Shi" }
-		929 = { "HongJun %d. Shi" }
-		930 = { "HongJun %d. Shi" }
-		931 = { "HongJun %d. Shi" }
-		932 = { "HongJun %d. Shi" }
-		933 = { "HongJun %d. Shi" }
-		934 = { "HongJun %d. Shi" }
-		935 = { "HongJun %d. Shi" }
-		936 = { "HongJun %d. Shi" }
-		937 = { "HongJun %d. Shi" }
-		938 = { "HongJun %d. Shi" }
-		939 = { "HongJun %d. Shi" }
-		940 = { "HongJun %d. Shi" }
-		941 = { "HongJun %d. Shi" }
-		942 = { "HongJun %d. Shi" }
-		943 = { "HongJun %d. Shi" }
-		944 = { "HongJun %d. Shi" }
-		945 = { "HongJun %d. Shi" }
-		946 = { "HongJun %d. Shi" }
-		947 = { "HongJun %d. Shi" }
-		948 = { "HongJun %d. Shi" }
-		949 = { "HongJun %d. Shi" }
-		950 = { "HongJun %d. Shi" }
-		951 = { "HongJun %d. Shi" }
-		952 = { "HongJun %d. Shi" }
-		953 = { "HongJun %d. Shi" }
-		954 = { "HongJun %d. Shi" }
-		955 = { "HongJun %d. Shi" }
-		956 = { "HongJun %d. Shi" }
-		957 = { "HongJun %d. Shi" }
-		958 = { "HongJun %d. Shi" }
-		959 = { "HongJun %d. Shi" }
-		960 = { "HongJun %d. Shi" }
-		961 = { "HongJun %d. Shi" }
-		962 = { "HongJun %d. Shi" }
-		963 = { "HongJun %d. Shi" }
-		964 = { "HongJun %d. Shi" }
-		965 = { "HongJun %d. Shi" }
-		966 = { "HongJun %d. Shi" }
-		967 = { "HongJun %d. Shi" }
-		968 = { "HongJun %d. Shi" }
-		969 = { "HongJun %d. Shi" }
-		970 = { "HongJun %d. Shi" }
-		971 = { "HongJun %d. Shi" }
-		972 = { "HongJun %d. Shi" }
-		973 = { "HongJun %d. Shi" }
-		974 = { "HongJun %d. Shi" }
-		975 = { "HongJun %d. Shi" }
-		976 = { "HongJun %d. Shi" }
-		977 = { "HongJun %d. Shi" }
-		978 = { "HongJun %d. Shi" }
-		979 = { "HongJun %d. Shi" }
-		980 = { "HongJun %d. Shi" }
-		981 = { "HongJun %d. Shi" }
-		982 = { "HongJun %d. Shi" }
-		983 = { "HongJun %d. Shi" }
-		984 = { "HongJun %d. Shi" }
-		985 = { "HongJun %d. Shi" }
-		986 = { "HongJun %d. Shi" }
-		987 = { "HongJun %d. Shi" }
-		988 = { "HongJun %d. Shi" }
-		989 = { "HongJun %d. Shi" }
-		990 = { "HongJun %d. Shi" }
-		991 = { "HongJun %d. Shi" }
-		992 = { "HongJun %d. Shi" }
-		993 = { "HongJun %d. Shi" }
-		994 = { "HongJun %d. Shi" }
-		995 = { "HongJun %d. Shi" }
-		996 = { "HongJun %d. Shi" }
-		997 = { "HongJun %d. Shi" }
-		998 = { "HongJun %d. Shi" }
-		999 = { "HongJun %d. Shi" }
-
+		51 = { "%d. Shi" }
+		52 = { "%d. Shi" }
+		53 = { "%d. Shi" }
 	}
 }
 
