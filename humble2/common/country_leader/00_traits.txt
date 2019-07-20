@@ -277,7 +277,7 @@ leader_traits = {
 		production_speed_nuclear_reactor_factor = 9
 
 		army_speed_factor = 2
-		research_speed_factor = 0.95
+		research_time_factor = -0.99
 	}
 
 	permanent_revolutionary = {

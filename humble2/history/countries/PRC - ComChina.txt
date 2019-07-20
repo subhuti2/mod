@@ -9,6 +9,7 @@ set_technology = {
 }
 set_stability = 0.6
 set_war_support = 0.7
+		research_speed_factor = 0.95
 
 save_global_event_target_as = WTT_communist_china
 
@@ -211,18 +212,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Mao Zedong"
 	gfx = "GFX_portrait_prc_mao_zedong"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine trait_cautious  thorough_planner unyielding_defender organisational_leader inspirational_leader }
-	skill = 9
-	attack_skill = 10
-	defense_skill = 10
-	planning_skill = 10
-	logistics_skill = 10
-}
-
-create_field_marshal = {
-	name = "Chen Yi"
-	gfx = "GFX_portrait_prc_chen_yi"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine trait_cautious  thorough_planner unyielding_defender organisational_leader inspirational_leader }
+	traits = { brilliant_strategist inflexible_strategist defensive_doctrine thorough_planner unyielding_defender organisational_leader inspirational_leader expert_delegator}
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -233,7 +223,19 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Zhu De"
 	gfx = "GFX_portrait_prc_zhu_de"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+
+create_field_marshal = {
+	name = "Chen Yi"
+	gfx = "GFX_portrait_prc_chen_yi"
+	traits = { brilliant_strategist inflexible_strategist defensive_doctrine thorough_planner unyielding_defender organisational_leader inspirational_leader expert_delegator}
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -244,7 +246,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Peng Dehuai"
 	gfx = "GFX_portrait_prc_peng_dehuai"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -255,7 +257,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Lin Biao"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -265,8 +267,8 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Su Yu"
-	portrait_path = WTT_TODO_ART
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Su_Yu.dds"
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -276,8 +278,8 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Nie Rongzhen"
-	portrait_path = generic_army_asia_1
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Nie_RongZhen.dds"
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -286,9 +288,9 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Ye Jianying"
-	portrait_path = generic_army_asia_2
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	name = "He Long"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_He_Long.dds"
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -298,8 +300,8 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Liu Bocheng"
-	portrait_path = WTT_TODO_ART
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Liu_BoCheng.dds"
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -309,7 +311,30 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Xu Xiangqian"
-	traits = { brilliant_strategist inflexible_strategist defensive_doctrine infantry_officer  offensive_doctrine fast_planner aggressive_assaulter }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xu_XiangQian.dds"
+	traits = { brilliant_strategist inflexible_strategist offensive_doctrine fast_planner aggressive_assaulter organisational_leader inspirational_leader expert_delegator infantry_officer  }
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_field_marshal = {
+	name = "Luo Ronghuan"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Luo_RongHeng.dds"
+	traits = { brilliant_strategist inflexible_strategist defensive_doctrine thorough_planner unyielding_defender organisational_leader inspirational_leader expert_delegator}
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_field_marshal = {
+	name = "Ye Jianying"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Ye_JianYing.dds"
+	traits = { brilliant_strategist inflexible_strategist defensive_doctrine thorough_planner unyielding_defender organisational_leader inspirational_leader expert_delegator}
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -319,8 +344,30 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Chen Geng"
-	portrait_path = WTT_TODO_ART
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Chen_geng.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_corps_commander = {
+	name = "Tan Zheng"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Tan_Zheng.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert ambusher }
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_corps_commander = {
+	name = "Zhang Aiping"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Zhang_AiPing.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -330,7 +377,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Huang Kecheng"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Huang_KC.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -340,7 +388,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Liu Yalou"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Liu_YaLou.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -350,7 +399,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Xu Haidong"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xu_HD.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -360,7 +410,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Zhang Yunyi"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Zhang_YY.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -370,7 +421,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Luo Ruiqing"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Luo_RQ.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -380,7 +432,30 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Wang Shusheng"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Tan_Zheng.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_corps_commander = {
+	name = "Xiao Hua"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xiao_Hua.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert  ambusher}
+	skill = 9
+	attack_skill = 10
+	defense_skill = 10
+	planning_skill = 10
+	logistics_skill = 10
+}
+
+create_corps_commander = {
+	name = "Xiao Jinguang"
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xiao_JingGuang.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -390,7 +465,8 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Xu Guangda"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xu_GuangDa.dds"
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -400,7 +476,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Zhang Zongxun"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -410,7 +486,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Wang Zhen"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -420,7 +496,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Wang Jinshan"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -430,7 +506,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Xu Shiyou"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -440,7 +516,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Yang Chengwu"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -450,7 +526,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Han Xianchu"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -460,7 +536,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Chen Zaidao"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -470,7 +546,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Yang Dezhi"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -480,7 +556,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Xie Fuzhi"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert  ambusher}
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -490,7 +566,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Yang Yong"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -500,7 +576,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Wang Erzhuo"
-	traits = { infantry_officer trickster trait_mountaineer adaptable organizer }
+	traits = { organizer cavalry_leader skilled_staffer trickster infantry_leader trickster adaptable panzer_leader commando trait_engineer jungle_rat ranger urban_assault_specialist naval_invader invader_ii naval_liason skirmisher paratrooper expert_improviser guerilla_fighter desert_fox swamp_fox hill_fighter winter_specialist trait_mountaineer winter_expert panzer_expert infantry_expert }
 	skill = 9
 	attack_skill = 10
 	defense_skill = 10
@@ -510,60 +586,60 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Wang Jia"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Zhang Yi"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Li Bing"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Zhao Ding"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Liu Wu"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "He Ji"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Chen Geng"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Sun Xin"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Zheng Ren"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
 
 create_navy_leader = {
 	name = "Zhou Kui"
-	traits = { superior_tactician spotter }
+	traits = { blockade_runner fly_swatter ironside air_controller superior_tactician spotter }
 	skill = 9
 }
